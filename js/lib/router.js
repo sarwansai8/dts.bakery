@@ -16,11 +16,9 @@ class AppRouter {
   init(containerId = 'app') {
     this.appContainer = document.getElementById(containerId);
     window.addEventListener('hashchange', () => this.handleRoute());
-    if (document.readyState === 'loading') {
-      window.addEventListener('DOMContentLoaded', () => this.handleRoute());
-    } else {
-      setTimeout(() => this.handleRoute(), 0);
-    }
+    // Defer the initial route handling so that subsequent script execution
+    // can register the routes first.
+    setTimeout(() => this.handleRoute(), 0);
     document.addEventListener('click', (e) => this.handleLinkClick(e));
     return this;
   }
