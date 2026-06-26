@@ -247,11 +247,14 @@ const Layout = {
   },
 
   initNavbarScroll() {
-    const navbar = document.getElementById('navbar');
-    if (!navbar) return;
+    if (window._navbarScrollInitialized) return;
+    window._navbarScrollInitialized = true;
 
     let lastScroll = 0;
     window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (!navbar) return;
+
       const currentScroll = window.scrollY;
       if (currentScroll > 50) {
         navbar.classList.add('scrolled');
