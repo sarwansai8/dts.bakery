@@ -1098,7 +1098,7 @@ const Pages = {
   },
 
   faq(container) {
-    Pages._renderStaticPage(container, 'Frequently Asked Questions', \`
+    Pages._renderStaticPage(container, 'Frequently Asked Questions', `
       <h3>How do I place an order?</h3>
       <p style="margin-bottom:var(--space-md)">Simply browse our products, add them to your cart, and proceed to checkout. Your order will be sent to us via WhatsApp for quick processing!</p>
       
@@ -1107,43 +1107,43 @@ const Pages = {
       
       <h3>How long does delivery take?</h3>
       <p style="margin-bottom:var(--space-md)">For Kukatpally and nearby areas, we usually deliver within 24-48 hours. Custom orders may take up to 3 days.</p>
-    \`);
+    `);
   },
 
   shipping(container) {
-    Pages._renderStaticPage(container, 'Shipping Policy', \`
+    Pages._renderStaticPage(container, 'Shipping Policy', `
       <p style="margin-bottom:var(--space-md)">We currently deliver across Hyderabad. Delivery fees are calculated at checkout based on your location.</p>
       <ul style="margin-left:var(--space-xl);margin-bottom:var(--space-md)">
         <li>Free delivery on all orders above ₹500.</li>
         <li>Standard delivery fee of ₹49 for orders below ₹500.</li>
         <li>Orders placed before 5 PM are processed the same day.</li>
       </ul>
-    \`);
+    `);
   },
 
   returns(container) {
-    Pages._renderStaticPage(container, 'Returns & Refunds', \`
+    Pages._renderStaticPage(container, 'Returns & Refunds', `
       <p style="margin-bottom:var(--space-md)">Because our products are perishable food items, we do not accept returns. However, your satisfaction is our priority.</p>
       <p>If you receive a damaged product or an incorrect order, please contact us via WhatsApp immediately with a photo, and we will issue a replacement or refund.</p>
-    \`);
+    `);
   },
 
   privacy(container) {
-    Pages._renderStaticPage(container, 'Privacy Policy', \`
+    Pages._renderStaticPage(container, 'Privacy Policy', `
       <p style="margin-bottom:var(--space-md)">At DTS Chocolate, we respect your privacy. We only collect the information necessary to process your orders (name, phone number, and delivery address).</p>
       <p>We do not share your personal information with third parties. Your data is used exclusively to ensure smooth delivery and customer support via WhatsApp.</p>
-    \`);
+    `);
   },
 
   terms(container) {
-    Pages._renderStaticPage(container, 'Terms of Service', \`
+    Pages._renderStaticPage(container, 'Terms of Service', `
       <p style="margin-bottom:var(--space-md)">By placing an order with DTS Chocolate, you agree to provide accurate delivery information. We reserve the right to cancel orders if the address is undeliverable or incomplete.</p>
       <p>All prices are subject to change without notice. Our liability is limited to the purchase price of the items ordered.</p>
-    \`);
+    `);
   },
 
   sitemap(container) {
-    Pages._renderStaticPage(container, 'Sitemap', \`
+    Pages._renderStaticPage(container, 'Sitemap', `
       <ul style="margin-left:var(--space-xl);line-height:2">
         <li><a data-link="/">Home</a></li>
         <li><a data-link="/products">All Products</a></li>
@@ -1152,7 +1152,7 @@ const Pages = {
         <li><a data-link="/cart">Cart</a></li>
         <li><a data-link="/login">Login</a></li>
       </ul>
-    \`);
+    `);
   },
 
   /* ======================== 404 ======================== */
